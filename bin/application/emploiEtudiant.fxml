@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="700.0" prefWidth="1400.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.afficherEmploiC">
+   <children>
+      <BorderPane layoutX="114.0" layoutY="54.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="92.0" prefWidth="1350.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="1464.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.007998687500045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="618.063980710938" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+									<Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MenuClose" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="594.0" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+									<Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" layoutX="564.0" layoutY="33.0" prefHeight="53.0" prefWidth="835.0">
+                     <children>
+                        <Label fx:id="LableRole" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="198.0" text="Label">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="LableNom" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="230.0" style="-fx-border-color: #0A4969; -fx-border-width: 0px 0px 0px 5px;" text="Label">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #0A4969;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton fx:id="btnexit" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Exit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+									<Image url="@images/deconnexion%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="emploi" layoutX="41.0" layoutY="214.0" prefHeight="133.0" prefWidth="1026.0">
+                    <columns>
+                      <TableColumn fx:id="C_Theme" prefWidth="268.00006103515625" text="Theme" />
+                      <TableColumn fx:id="C_Salle" minWidth="0.0" prefWidth="45.999908447265625" text="Room" />
+                        <TableColumn fx:id="C_Date" minWidth="0.0" prefWidth="114.66668701171875" text="Date" />
+                        <TableColumn fx:id="C_Heure" minWidth="0.0" prefWidth="51.3333740234375" text="Hour" />
+                        <TableColumn fx:id="Encadreur" prefWidth="188.0" text="Framer" />
+                        <TableColumn fx:id="Email_Encadreur" prefWidth="255.33343505859375" text="Framer Email" />
+                        <TableColumn fx:id="Import_Rapport" prefWidth="96.6666259765625" text="Import Rapport" />
+                    </columns>
+                  </TableView>
+                  <Label fx:id="ADD_THEME_LABEL" alignment="CENTER" layoutX="232.0" layoutY="162.0" prefHeight="17.0" prefWidth="594.0" />
+                  <Label fx:id="Label_updload" alignment="CENTER" layoutX="360.0" layoutY="171.0" prefHeight="17.0" prefWidth="356.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <Accordion />
+   </children>
+</AnchorPane>

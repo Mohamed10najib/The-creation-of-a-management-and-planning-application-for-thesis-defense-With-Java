@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="content" prefHeight="700.0" prefWidth="1400.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.afficheProController">
+   <children>
+      <BorderPane layoutX="114.0" layoutY="54.0" prefHeight="700.0" prefWidth="1400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="92.0" prefWidth="1350.0" style="-fx-background-color: WHITE;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="102.0" layoutY="20.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #032d4d;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="Exit" fitHeight="22.0" fitWidth="22.0" layoutX="1464.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/exit.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Label fx:id="Menu" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.007998687500045" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="618.063980710938" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+									<Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="MenuClose" layoutX="14.0" layoutY="36.0" prefHeight="22.0" prefWidth="92.0" text="MENU" textFill="#b7b7b7" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="594.0" AnchorPane.topAnchor="36.0">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+									<Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/menu1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #0A4969;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutX="14.0" layoutY="35.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton fx:id="btnDashboard" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Dashboard" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+									<Image url="file:/C:/Users/dell/Documents/login/src/application/sample/Images/dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnProffessors" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Professors" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+									<Image url="@images/groupe.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnStudents" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Students" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+									<Image url="@images/students.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="BtnSoutenance" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Thesis Defense" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+									<Image url="@images/examen.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnexit" alignment="BASELINE_LEFT" onAction="#handle" prefHeight="65.0" prefWidth="176.0" styleClass="sidebarItem" text="Exit" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/deconnexion%20(2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView fx:id="tableProf" layoutX="67.0" layoutY="114.0" prefHeight="364.0" prefWidth="986.0">
+                     <columns>
+                        <TableColumn fx:id="NOM" prefWidth="150.0" text="Name" />
+                        <TableColumn fx:id="PRENOM" prefWidth="150.0" text="Last Name" />
+                        <TableColumn fx:id="DEPARTEMENT" prefWidth="191.33331298828125" text="Departement" />
+                        <TableColumn fx:id="EMAIL" prefWidth="187.33331298828125" text="Email" />
+                        <TableColumn fx:id="ANNESEX" prefWidth="99.3333740234375" text="Experince" />
+                        <TableColumn fx:id="ACTIONS" prefWidth="205.33331298828125" text="ACTIONS" />
+                     </columns>
+                  </TableView>
+                  <Button layoutX="862.0" layoutY="52.0" mnemonicParsing="false" onAction="#addTeacher" prefHeight="41.0" prefWidth="191.0" text="           Add teacher">
+                     <font>
+                        <Font size="17.0" />
+                     </font></Button>
+                  <ImageView fitHeight="27.0" fitWidth="28.0" layoutX="879.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/ajouter.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="407.0" layoutY="66.0" text="Display Professors" textFill="#0a4969">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="warning" alignment="CENTER" layoutX="183.0" layoutY="93.0" prefHeight="17.0" prefWidth="498.0" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+      <HBox alignment="CENTER" layoutX="574.0" layoutY="35.0" prefHeight="53.0" prefWidth="835.0">
+         <children>
+            <Label fx:id="LableRole" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="198.0" text="Label">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="LableNom" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="230.0" style="-fx-border-color: #0A4969; -fx-border-width: 0px 0px 0px 5px;" text="Label">
+               <font>
+                  <Font name="Arial Rounded MT Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
